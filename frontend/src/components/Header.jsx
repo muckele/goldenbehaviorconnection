@@ -60,7 +60,7 @@ const Header = () => {
           </nav>
 
           {/* Desktop CTA */}
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden lg:flex items-center space-x-4">
             <a
               href={`tel:${mockData.company.phone}`}
               className="flex items-center text-sm text-gray-600 hover:text-green-700 transition-colors"
@@ -68,7 +68,14 @@ const Header = () => {
               <Phone className="w-4 h-4 mr-1" />
               {mockData.company.phone}
             </a>
-            <Button asChild className="btn-primary">
+            <Button asChild className="btn-primary text-sm px-4 py-2">
+              <Link to="/get-started">Get Started</Link>
+            </Button>
+          </div>
+
+          {/* Tablet CTA - Just button */}
+          <div className="hidden md:flex lg:hidden">
+            <Button asChild className="btn-primary text-sm px-4 py-2">
               <Link to="/get-started">Get Started</Link>
             </Button>
           </div>
