@@ -101,15 +101,43 @@ export const mockData = {
     }
   ],
 
-  // Insurance Providers
+  // Insurance Providers with actual logo URLs
   insurance: [
-    { name: "Aetna", logo: "/api/placeholder/120/60" },
-    { name: "Cigna", logo: "/api/placeholder/120/60" },
-    { name: "United Healthcare", logo: "/api/placeholder/120/60" },
-    { name: "NY Medicaid", logo: "/api/placeholder/120/60" },
-    { name: "Emblem Health", logo: "/api/placeholder/120/60" },
-    { name: "NY Ship", logo: "/api/placeholder/120/60" },
-    { name: "Empire Blue Cross Blue Shield", logo: "/api/placeholder/120/60" }
+    { 
+      name: "Aetna", 
+      logo: "https://images.seeklogo.com/logo-png/32/1/aetna-logo-png_seeklogo-322017.png",
+      alt: "Aetna Insurance Logo"
+    },
+    { 
+      name: "Cigna", 
+      logo: "https://logos-world.net/wp-content/uploads/2021/02/Cigna-Logo.png",
+      alt: "Cigna Insurance Logo"
+    },
+    { 
+      name: "United Healthcare", 
+      logo: "https://images.seeklogo.com/logo-png/30/1/united-healthcare-logo-png_seeklogo-303927.png",
+      alt: "United Healthcare Logo"
+    },
+    { 
+      name: "NY Medicaid", 
+      logo: "https://www.health.ny.gov/health_care/medicaid/images/medicaid_logo.png",
+      alt: "New York Medicaid Logo"
+    },
+    { 
+      name: "Emblem Health", 
+      logo: "https://www.emblemhealth.com/-/media/emblem/images/logos/emblem-health-logo.png",
+      alt: "EmblemHealth Insurance Logo"
+    },
+    { 
+      name: "NY Ship", 
+      logo: "https://www.cs.ny.gov/employee-benefits/shared/images/nyship-logo.png",
+      alt: "New York State Health Insurance Program Logo"
+    },
+    { 
+      name: "Empire Blue Cross Blue Shield", 
+      logo: "https://logos-world.net/wp-content/uploads/2021/02/Blue-Cross-Blue-Shield-Logo.png",
+      alt: "Empire Blue Cross Blue Shield Logo"
+    }
   ],
 
   // Mission & About
