@@ -196,10 +196,10 @@ const GetStarted = () => {
       </section>
 
       {/* Form Section */}
-      <section className="py-12 bg-gray-50">
+      <section className="py-8 md:py-12 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 lg:gap-8">
               {/* Form */}
               <div className="lg:col-span-3">
                 <Card className="border-0 shadow-lg">
