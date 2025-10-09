@@ -134,7 +134,6 @@ const Insurance = () => {
               </Card>
             ))}
           </div>
-          </div>
 
           <div className="text-center mt-12">
             <div className="bg-blue-50 rounded-lg p-6 max-w-2xl mx-auto">
