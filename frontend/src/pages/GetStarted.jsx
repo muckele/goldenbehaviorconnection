@@ -214,7 +214,7 @@ const GetStarted = () => {
                         <div className="space-y-6">
                           <div>
                             <h3 className="font-medium text-gray-900 mb-4">Parent/Guardian Information</h3>
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                               <div>
                                 <label className="block text-sm font-medium text-gray-700 mb-2">Your Name *</label>
                                 <Input
@@ -271,7 +271,7 @@ const GetStarted = () => {
 
                           <div>
                             <h3 className="font-medium text-gray-900 mb-4">Child Information</h3>
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                               <div>
                                 <label className="block text-sm font-medium text-gray-700 mb-2">Child's Name *</label>
                                 <Input
@@ -332,7 +332,7 @@ const GetStarted = () => {
                         <div className="space-y-6">
                           <div>
                             <h3 className="font-medium text-gray-900 mb-4">Location Information</h3>
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                               <div className="md:col-span-2">
                                 <label className="block text-sm font-medium text-gray-700 mb-2">Address *</label>
                                 <Input
@@ -374,7 +374,7 @@ const GetStarted = () => {
 
                           <div>
                             <h3 className="font-medium text-gray-900 mb-4">Insurance Information</h3>
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                               <div>
                                 <label className="block text-sm font-medium text-gray-700 mb-2">Insurance Provider *</label>
                                 <select
