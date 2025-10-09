@@ -105,30 +105,31 @@ const Insurance = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 max-w-6xl mx-auto">
             {mockData.insurance.map((provider, index) => (
               <Card key={index} className="border-2 border-gray-100 hover:border-green-200 hover:shadow-lg transition-all duration-300 hover-lift">
-                <CardContent className="p-6 text-center">
-                  <div className="w-full h-16 flex items-center justify-center mx-auto mb-4 bg-white rounded-lg">
+                <CardContent className="p-4 md:p-6 text-center">
+                  <div className="w-full h-12 md:h-16 flex items-center justify-center mx-auto mb-3 md:mb-4 bg-white rounded-lg relative">
                     <img 
                       src={provider.logo} 
                       alt={provider.alt}
-                      className="insurance-logo max-w-full max-h-full"
+                      className="insurance-logo max-w-full max-h-full object-contain"
                       loading="lazy"
                       onError={(e) => {
                         // Fallback to text if image fails to load
                         e.target.style.display = 'none';
-                        e.target.nextSibling.style.display = 'block';
+                        const fallback = e.target.parentNode.querySelector('.logo-fallback');
+                        if (fallback) fallback.style.display = 'flex';
                       }}
                     />
-                    <span 
-                      className="text-gray-600 font-medium text-sm" 
+                    <div 
+                      className="logo-fallback absolute inset-0 bg-gray-50 border-2 border-dashed border-gray-300 rounded flex items-center justify-center text-gray-500 font-medium text-xs"
                       style={{ display: 'none' }}
                     >
                       {provider.name}
-                    </span>
+                    </div>
                   </div>
-                  <h3 className="font-medium text-gray-900 text-sm mobile-text-xs">{provider.name}</h3>
+                  <h3 className="font-medium text-gray-900 text-xs md:text-sm leading-tight">{provider.name}</h3>
                 </CardContent>
               </Card>
             ))}
