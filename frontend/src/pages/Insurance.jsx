@@ -105,17 +105,34 @@ const Insurance = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
             {mockData.insurance.map((provider, index) => (
-              <Card key={index} className="border-2 border-gray-100 hover:border-green-200 hover:shadow-md transition-all duration-300">
+              <Card key={index} className="border-2 border-gray-100 hover:border-green-200 hover:shadow-lg transition-all duration-300 hover-lift">
                 <CardContent className="p-6 text-center">
-                  <div className="w-24 h-12 bg-gray-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                    <span className="text-gray-600 font-medium text-sm">{provider.name}</span>
+                  <div className="w-full h-16 flex items-center justify-center mx-auto mb-4 bg-white rounded-lg">
+                    <img 
+                      src={provider.logo} 
+                      alt={provider.alt}
+                      className="insurance-logo max-w-full max-h-full"
+                      loading="lazy"
+                      onError={(e) => {
+                        // Fallback to text if image fails to load
+                        e.target.style.display = 'none';
+                        e.target.nextSibling.style.display = 'block';
+                      }}
+                    />
+                    <span 
+                      className="text-gray-600 font-medium text-sm" 
+                      style={{ display: 'none' }}
+                    >
+                      {provider.name}
+                    </span>
                   </div>
-                  <h3 className="font-medium text-gray-900 text-sm">{provider.name}</h3>
+                  <h3 className="font-medium text-gray-900 text-sm mobile-text-xs">{provider.name}</h3>
                 </CardContent>
               </Card>
             ))}
+          </div>
           </div>
 
           <div className="text-center mt-12">
