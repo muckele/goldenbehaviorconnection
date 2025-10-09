@@ -113,11 +113,16 @@ const Footer = () => {
 
         {/* Bottom Section */}
         <div className="mt-8 pt-8 border-t border-gray-200">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-sm text-gray-600 mb-4 md:mb-0">
-              © {currentYear} Golden Behavior Connection. All rights reserved.
-            </p>
-            <div className="flex space-x-6 text-sm">
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <div className="text-center md:text-left">
+              <p className="text-sm text-gray-600 mb-2 md:mb-0">
+                © {currentYear} Golden Behavior Connection. All rights reserved.
+              </p>
+              <p className="text-xs text-gray-500">
+                Visit us at: <a href={mockData.company.fullWebsite} className="text-green-600 hover:text-green-700 transition-colors">{mockData.company.website}</a>
+              </p>
+            </div>
+            <div className="flex flex-wrap justify-center md:justify-end gap-4 md:gap-6 text-sm">
               <a href="/privacy" className="text-gray-600 hover:text-green-700 transition-colors">
                 Privacy Policy
               </a>
