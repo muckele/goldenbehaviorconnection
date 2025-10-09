@@ -28,15 +28,17 @@ const Header = () => {
   return (
     <header className="bg-white shadow-sm border-b border-gray-100 sticky top-0 z-50">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-lg">🦊</span>
+          <Link to="/" className="flex items-center space-x-2 md:space-x-3">
+            <div className="w-8 h-8 md:w-10 md:h-10 bg-orange-500 rounded-full flex items-center justify-center">
+              <span className="text-white font-bold text-sm md:text-lg">🦊</span>
             </div>
             <div>
-              <div className="font-semibold text-xl text-gray-900">Golden Behavior Connection</div>
-              <div className="text-xs text-gray-600">Empowered by Finni Health</div>
+              <div className="font-semibold text-sm sm:text-base lg:text-xl text-gray-900 leading-tight">
+                Golden Behavior Connection
+              </div>
+              <div className="text-xs text-gray-600 hidden sm:block">Empowered by Finni Health</div>
             </div>
           </Link>
 
