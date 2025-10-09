@@ -16,7 +16,8 @@ import {
   FileText,
   Phone,
   Calendar,
-  Heart
+  Heart,
+  Send
 } from 'lucide-react';
 import { mockData } from '../mock';
 
