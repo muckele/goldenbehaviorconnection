@@ -7,7 +7,8 @@ export const mockData = {
     tagline: "Empowered by Finni Health",
     phone: "(914) 768-8525",
     email: "info@goldenbehaviorconnection.com",
-    website: "www.goldenbehaviorconnection.com",
+    website: "goldenbehaviorconnection.com",
+    fullWebsite: "https://www.goldenbehaviorconnection.com",
     address: "Serving Westchester County, Southern Connecticut, and Northern NYC"
   },
 
