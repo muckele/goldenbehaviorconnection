@@ -19,30 +19,31 @@ const Home = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="gradient-hero min-h-screen flex items-center justify-center relative overflow-hidden">
+      <section className="gradient-hero min-h-screen flex items-center justify-center relative overflow-hidden py-12">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="animate-slide-up">
-              <Badge variant="secondary" className="mb-6 bg-green-100 text-green-800">
-                No Waitlist • Serving NYC Area • BCBA-Led Care
+              <Badge variant="secondary" className="mb-4 md:mb-6 bg-green-100 text-green-800 text-xs md:text-sm px-3 py-1">
+                <span className="hidden sm:inline">No Waitlist • Serving NYC Area • BCBA-Led Care</span>
+                <span className="sm:hidden">No Waitlist • BCBA-Led Care</span>
               </Badge>
-              <h1 className="display-hero text-gray-900 mb-6">
+              <h1 className="display-hero text-gray-900 mb-4 md:mb-6 px-4">
                 {mockData.hero.title}
               </h1>
-              <p className="body-large text-gray-600 mb-8 max-w-2xl mx-auto">
+              <p className="body-large text-gray-600 mb-6 md:mb-8 max-w-2xl mx-auto px-4">
                 {mockData.hero.description}
               </p>
-              <p className="body-standard text-gray-500 mb-10">
+              <p className="body-standard text-gray-500 mb-8 md:mb-10 px-4">
                 {mockData.hero.subtitle}
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button asChild size="lg" className="btn-primary text-lg px-8 py-4">
+              <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center px-4">
+                <Button asChild size="lg" className="btn-primary text-base md:text-lg px-6 md:px-8 py-3 md:py-4 w-full sm:w-auto">
                   <Link to="/get-started">
                     {mockData.hero.primaryCTA}
-                    <ArrowRight className="ml-2 w-5 h-5" />
+                    <ArrowRight className="ml-2 w-4 md:w-5 h-4 md:h-5" />
                   </Link>
                 </Button>
-                <Button asChild variant="outline" size="lg" className="btn-secondary text-lg px-8 py-4">
+                <Button asChild variant="outline" size="lg" className="btn-secondary text-base md:text-lg px-6 md:px-8 py-3 md:py-4 w-full sm:w-auto">
                   <Link to="/services">
                     {mockData.hero.secondaryCTA}
                   </Link>
@@ -51,16 +52,16 @@ const Home = () => {
             </div>
 
             {/* Quick Contact */}
-            <div className="animate-slide-up delay-300 mt-12 flex flex-col sm:flex-row gap-6 justify-center items-center">
-              <div className="flex items-center text-gray-600">
-                <Phone className="w-5 h-5 mr-2" />
+            <div className="animate-slide-up delay-300 mt-8 md:mt-12 flex flex-col sm:flex-row gap-4 md:gap-6 justify-center items-center px-4">
+              <div className="flex items-center text-gray-600 text-sm md:text-base">
+                <Phone className="w-4 md:w-5 h-4 md:h-5 mr-2" />
                 <a href={`tel:${mockData.company.phone}`} className="hover:text-green-700 transition-colors font-medium">
                   {mockData.company.phone}
                 </a>
               </div>
-              <div className="flex items-center text-gray-600">
-                <Mail className="w-5 h-5 mr-2" />
-                <a href={`mailto:${mockData.company.email}`} className="hover:text-green-700 transition-colors font-medium">
+              <div className="flex items-center text-gray-600 text-sm md:text-base">
+                <Mail className="w-4 md:w-5 h-4 md:h-5 mr-2" />
+                <a href={`mailto:${mockData.company.email}`} className="hover:text-green-700 transition-colors font-medium break-all sm:break-normal">
                   {mockData.company.email}
                 </a>
               </div>
